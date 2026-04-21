@@ -1,0 +1,159 @@
+@{
+    ViewData["Title"] = "İletişim";
+}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-bg">
+        <div class="header-orb header-orb-1"></div>
+        <div class="header-orb header-orb-2"></div>
+    </div>
+    <div class="section-container page-header-content">
+        <span class="section-badge animate-on-scroll">📬 İletişim</span>
+        <h1 class="section-title animate-on-scroll" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">
+            Bizimle <span class="gradient-text">İletişime Geçin</span>
+        </h1>
+        <p class="section-description animate-on-scroll">
+            Sorularınız, projeleriniz veya iş birliği teklifleriniz için bize ulaşın. Size en kısa sürede dönüş yapacağız.
+        </p>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="section" style="padding-top: 40px;">
+    <div class="section-container">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info-cards">
+                <div class="contact-info-card animate-on-scroll delay-1">
+                    <div class="contact-info-icon">📍</div>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Maslak Mahallesi, Büyükdere Cad. No: 255<br />Sarıyer, İstanbul 34398</p>
+                    </div>
+                </div>
+                <div class="contact-info-card animate-on-scroll delay-2">
+                    <div class="contact-info-icon">📞</div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p>+90 (212) 123 45 67</p>
+                        <p>+90 (212) 123 45 68</p>
+                    </div>
+                </div>
+                <div class="contact-info-card animate-on-scroll delay-3">
+                    <div class="contact-info-icon">✉️</div>
+                    <div>
+                        <h4>E-posta</h4>
+                        <p>info@ubys.com</p>
+                        <p>destek@ubys.com</p>
+                    </div>
+                </div>
+                <div class="contact-info-card animate-on-scroll delay-4">
+                    <div class="contact-info-icon">🕐</div>
+                    <div>
+                        <h4>Çalışma Saatleri</h4>
+                        <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                        <p>Teknik Destek: 7/24</p>
+                    </div>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="contact-social animate-on-scroll delay-5">
+                    <a href="#" class="social-icon" title="LinkedIn">in</a>
+                    <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
+                    <a href="#" class="social-icon" title="YouTube">▶</a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper animate-on-scroll">
+                <h3>Mesaj Gönderin</h3>
+                <p class="form-subtitle">Formu doldurun, size 24 saat içinde dönüş yapalım.</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Ad</label>
+                            <input type="text" id="firstName" class="form-input" placeholder="Adınız" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Soyad</label>
+                            <input type="text" id="lastName" class="form-input" placeholder="Soyadınız" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" class="form-input" placeholder="ornek@email.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+90 5XX XXX XX XX" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Konu</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Mesajınızın konusu" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" class="form-textarea" placeholder="Mesajınızı yazın..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        Mesajı Gönder →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="section" style="padding-top: 0;">
+    <div class="section-container">
+        <div class="map-section animate-on-scroll">
+            <div class="section-header">
+                <span class="section-badge">📍 Konum</span>
+                <h2 class="section-title">Bizi Ziyaret Edin</h2>
+            </div>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.7!2d29.02!3d41.11!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA2JzM2LjAiTiAyOcKwMDEnMTIuMCJF!5e0!3m2!1str!2str!4v1"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="UBYS Ofis Konumu">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Mini Section -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header animate-on-scroll">
+            <span class="section-badge">❓ SSS</span>
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+        </div>
+
+        <div class="services-detail-grid">
+            <div class="feature-card animate-on-scroll delay-1">
+                <h3>Demo nasıl talep edebilirim?</h3>
+                <p>Yukarıdaki formu doldurarak veya bizi arayarak ücretsiz demo talep edebilirsiniz. Ekibimiz sizinle en kısa sürede iletişime geçecektir.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-2">
+                <h3>Kurulum ne kadar sürer?</h3>
+                <p>Kurumun büyüklüğüne göre 2-8 hafta arasında kurulum tamamlanır. Veri aktarımı ve eğitimler bu süreye dahildir.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-3">
+                <h3>Teknik destek nasıl sağlanır?</h3>
+                <p>7/24 telefon, e-posta ve canlı destek hattımız ile her an yanınızdayız. Profesyonel ve Kurumsal paketlerde özel hesap yöneticisi atanır.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-4">
+                <h3>Mevcut verilerimizi aktarabilir miyiz?</h3>
+                <p>Evet! Uzman ekibimiz mevcut sisteminizden UBYS'e sorunsuz veri aktarımı gerçekleştirir. Tüm süreç boyunca yanınızdayız.</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,161 @@
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Yeni Nesil Eğitim Teknolojisi
+            </div>
+            <h1 class="hero-title">
+                Üniversite Yönetiminde
+                <span class="gradient-text">Dijital Dönüşüm</span>
+            </h1>
+            <p class="hero-description">
+                UBYS ile eğitim kurumlarınızı geleceğe hazırlayın. Akıllı otomasyon, gerçek zamanlı analitik
+                ve modern arayüz ile kampüs yönetimini yeniden tanımlıyoruz.
+            </p>
+            <div class="hero-buttons">
+                <a asp-controller="Home" asp-action="Services" class="btn-primary-custom">
+                    Hizmetleri Keşfet →
+                </a>
+                <a asp-controller="Home" asp-action="Contact" class="btn-outline-custom">
+                    İletişime Geç
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-card-stack">
+                <div class="hero-floating-card">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="150" data-suffix="+">0</div>
+                            <div class="stat-label">Üniversite</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="2" data-suffix="M+">0</div>
+                            <div class="stat-label">Öğrenci</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="99" data-suffix="%">0</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="24" data-suffix="/7">0</div>
+                            <div class="stat-label">Destek</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-floating-card">
+                    <div class="mini-card-icon accent">🎓</div>
+                    <div class="mini-card-value">+12.4%</div>
+                    <div class="mini-card-label">Başarı Oranı</div>
+                </div>
+                <div class="hero-floating-card">
+                    <div class="mini-card-icon warm">📊</div>
+                    <div class="mini-card-value">98.7%</div>
+                    <div class="mini-card-label">Memnuniyet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="section">
+    <div class="section-container">
+        <div class="section-header animate-on-scroll">
+            <span class="section-badge">✦ Özellikler</span>
+            <h2 class="section-title">Neden UBYS?</h2>
+            <p class="section-description">
+                Modern teknoloji altyapısı ile eğitim kurumlarına kapsamlı çözümler sunuyoruz.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll delay-1">
+                <div class="feature-icon purple">🏫</div>
+                <h3>Kampüs Yönetimi</h3>
+                <p>Tüm kampüs operasyonlarını tek bir platform üzerinden yönetin. Akıllı otomasyon ile verimliliği artırın.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-2">
+                <div class="feature-icon teal">📚</div>
+                <h3>Ders & Müfredat</h3>
+                <p>Ders programları, müfredat yönetimi ve akademik takvim planlamasını kolayca gerçekleştirin.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-3">
+                <div class="feature-icon pink">📝</div>
+                <h3>Sınav Sistemi</h3>
+                <p>Online ve offline sınav yönetimi, otomatik not hesaplama ve sonuç analizi ile zamandan tasarruf edin.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-1">
+                <div class="feature-icon yellow">📈</div>
+                <h3>Analitik & Raporlama</h3>
+                <p>Gerçek zamanlı dashboardlar ve detaylı raporlar ile kurumunuzun performansını takip edin.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-2">
+                <div class="feature-icon green">🔒</div>
+                <h3>Güvenlik</h3>
+                <p>End-to-end şifreleme, rol tabanlı erişim kontrolü ve KVKK uyumlu veri yönetimi ile güvenli altyapı.</p>
+            </div>
+            <div class="feature-card animate-on-scroll delay-3">
+                <div class="feature-icon blue">🔗</div>
+                <h3>Entegrasyon</h3>
+                <p>YÖKSİS, e-Devlet ve üçüncü parti sistemler ile sorunsuz entegrasyon imkanı.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section stats-section">
+    <div class="section-container">
+        <div class="stats-grid">
+            <div class="stat-card animate-on-scroll delay-1">
+                <div class="stat-number" data-count="150" data-suffix="+">0</div>
+                <div class="stat-label">Kurum</div>
+            </div>
+            <div class="stat-card animate-on-scroll delay-2">
+                <div class="stat-number" data-count="2000000" data-suffix="">0</div>
+                <div class="stat-label">Aktif Kullanıcı</div>
+            </div>
+            <div class="stat-card animate-on-scroll delay-3">
+                <div class="stat-number" data-count="99" data-suffix=".9%">0</div>
+                <div class="stat-label">Uptime Garantisi</div>
+            </div>
+            <div class="stat-card animate-on-scroll delay-4">
+                <div class="stat-number" data-count="15" data-suffix="+">0</div>
+                <div class="stat-label">Yıllık Deneyim</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="section-container">
+        <div class="cta-content animate-on-scroll">
+            <h2>Dijital Dönüşüme <span class="gradient-text">Hazır mısınız?</span></h2>
+            <p>Kurumunuz için özel demo talep edin ve UBYS'in farkını keşfedin.</p>
+            <div class="cta-buttons">
+                <a asp-controller="Home" asp-action="Contact" class="btn-primary-custom">
+                    Demo Talep Et →
+                </a>
+                <a asp-controller="Home" asp-action="About" class="btn-outline-custom">
+                    Bizi Tanıyın
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

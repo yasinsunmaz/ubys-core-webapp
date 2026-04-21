@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UBYS</title>
+    <meta name="description" content="UBYS - Modern Üniversite Bilgi Yönetim Sistemi. Dijital dönüşümde güvenilir çözüm ortağınız." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="ubys-navbar" id="mainNavbar">
+        <div class="navbar-container">
+            <a class="navbar-brand-custom" asp-controller="Home" asp-action="Index">
+                <div class="brand-icon">U</div>
+                UBYS
+            </a>
+            <ul class="navbar-nav-custom" id="navMenu">
+                <li>
+                    <a class="nav-link-custom @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")"
+                       asp-controller="Home" asp-action="Index">Anasayfa</a>
+                </li>
+                <li>
+                    <a class="nav-link-custom @(ViewContext.RouteData.Values["action"]?.ToString() == "About" ? "active" : "")"
+                       asp-controller="Home" asp-action="About">Hakkımızda</a>
+                </li>
+                <li>
+                    <a class="nav-link-custom @(ViewContext.RouteData.Values["action"]?.ToString() == "Services" ? "active" : "")"
+                       asp-controller="Home" asp-action="Services">Hizmetlerimiz</a>
+                </li>
+                <li>
+                    <a class="nav-link-custom @(ViewContext.RouteData.Values["action"]?.ToString() == "Contact" ? "active" : "")"
+                       asp-controller="Home" asp-action="Contact">İletişim</a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü aç/kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="ubys-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>
+                        <div class="brand-icon" style="width:32px;height:32px;font-size:0.9rem;">U</div>
+                        UBYS
+                    </h3>
+                    <p>Modern üniversite bilgi yönetim sistemi. Eğitim teknolojilerinde yenilikçi çözümler sunarak dijital dönüşüme öncülük ediyoruz.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sayfalar</h4>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+                        <li><a asp-controller="Home" asp-action="About">Hakkımızda</a></li>
+                        <li><a asp-controller="Home" asp-action="Services">Hizmetlerimiz</a></li>
+                        <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="#">Öğrenci Yönetimi</a></li>
+                        <li><a href="#">Ders Yönetimi</a></li>
+                        <li><a href="#">Sınav Sistemi</a></li>
+                        <li><a href="#">Raporlama</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><a href="mailto:info@ubys.com">info@ubys.com</a></li>
+                        <li><a href="tel:+902121234567">+90 212 123 45 67</a></li>
+                        <li><a href="#">İstanbul, Türkiye</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UBYS. Tüm hakları saklıdır.</p>
+                <div class="footer-bottom-links">
+                    <a asp-controller="Home" asp-action="Privacy">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
