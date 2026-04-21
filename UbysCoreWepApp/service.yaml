@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ubys-core-webapp-service
+spec:
+  selector:
+    app: ubys-core-webapp
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP

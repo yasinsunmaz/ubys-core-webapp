@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ubys-core-webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ubys-core-webapp
+  template:
+    metadata:
+      labels:
+        app: ubys-core-webapp
+    spec:
+      containers:
+        - name: webapp
+          image: harbor.local/ubys/ubys-core-webapp:1.0.0
+          ports:
+            - containerPort: 80
